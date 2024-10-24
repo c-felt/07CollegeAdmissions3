@@ -317,7 +317,6 @@ body {
   font-weight: 300;
   min-width: 320px;
   display: grid;
-  background-color: blue;
 }
 
 /* --------------------------- HEADER --------------------------- */
@@ -392,6 +391,9 @@ main p {
   padding: 0.5rem 10px;
   color: #333;
   line-height: 150%;
+}
+main input:required {
+  border-left-color: red;
 }
 
 /* --------------------------- FOOTER --------------------------- */

@@ -18,7 +18,7 @@ body {
     font-weight: $lightWeight;
     min-width: 320px;
     display: grid;
-    background-color: blue;
+    // background-color: blue;
 }
 
 
@@ -90,7 +90,9 @@ main {
         color: #333;
         line-height: $leading;
     }
+    input:required {border-left-color: red;}
 }// end main
+
 
 
 
