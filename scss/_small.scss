@@ -127,7 +127,6 @@ form.my-form {
         width: 250px;
         padding: .5rem $gutter;
     }
-
     input:required {border-bottom-color: red;}
     input:focus{border-bottom-color: $primaryColor;}
     input:required:valid {border-bottom-color: $primaryColor;}
@@ -178,8 +177,6 @@ form.my-form {
         -webkit-appearance: none;
         appearance: none;
     }
-
-
 }//end of form styling
 
 

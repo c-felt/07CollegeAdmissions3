@@ -510,7 +510,6 @@ footer a {
   }
   nav {
     height: auto;
-    border-bottom: 2px solid #ccc;
   }
   nav ul {
     display: flex;
@@ -520,6 +519,7 @@ footer a {
   }
   nav li a:hover {
     background-color: #2342A0;
+    color: white;
   }
 }
 @media only screen and (min-width: 64rem) {
