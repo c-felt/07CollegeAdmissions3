@@ -83,42 +83,23 @@
             <label><input type="checkbox" name="fouryear">Four Year Degree</label>
 	<!--Here will be account information inout boxes for username and password -->
             <h3>Account Information</h3>
-            <label>Username <input type="text" name="username" required title="Enter your first name here"></label> <!--the suggested thing wont work-->
-            <label>Password <input type="text" name="password" required title="Last name here"></label>
-            
+            <label>Username (6 or more letters)<input type="text" name="username" required minlength="6" title="Enter a username that has 6 or more letters"></label> <!--the suggested thing wont work-->
+            <label>Password (6 or more letters and/or numbers)<input type="password" name="password" required pattern="^[A-Za-z0-9]{6,}$" title="Enter a password that has 6 or more characters and NO special characters"></label>
+            <!--"[A-Za-z0-9]{6,25}"-->
+            <!-- -->
+
             <input type="submit" value="Send my info!">    
         </form>
-   
-        <h3>Contact Information</h3>
-
-            <p>First Name</p>
-            <p>Last Name</p>
-            <p>Phone Number</p>
-            <p>Email</p>
-            <p>Address</p>
-            <p>City</p>
-            <p>State</p>
-            <p>Zip Code</p>
-        <h3> Communication Preference</h3>
-
-        <h3> Previous School Information</h3>
-        <h3> Education Completed</h3>
-        <h3> Account Information</h3>
-        <p>Username</p>
-        <p>Password</p>
-
-        <button>Create My Account</button>
-
         
     </main>
 </div><!-- end main wrapper -->
     
 <div id="footerWrapper">
     <footer>
-        <p>Copyright &copy; 2025 Design Thinking Inc. All rights reserved. 
-            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Clients</a></p>
+        <p>Copyright &copy; 2025 United University All rights reserved. 
+            <a href="#">Privacy Policy</a> | <a href="#">Terms of Use</a> | <a href="#">Home</a></p>
     </footer>
 </div> <!-- end footer wrapper -->
-   
+<script src="js/scripts.js"></script>  
 </body>
 </html> 

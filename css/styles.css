@@ -317,7 +317,6 @@ body {
   font-weight: 300;
   min-width: 320px;
   display: grid;
-  background-color: pink;
 }
 
 /* --------------------------- HEADER --------------------------- */
@@ -336,12 +335,13 @@ header {
 header span {
   font-size: 1.6rem;
   font-weight: 300;
-  color: #1d295f;
+  color: #001365;
 }
 
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
 div#navWrapper {
   grid-row-start: 4;
+  background-color: #001365;
 }
 
 #top a, #navlinks > a {
@@ -350,7 +350,7 @@ div#navWrapper {
   font-size: 1.6rem;
   height: 44px;
   text-decoration: none;
-  color: #333;
+  color: #DD9700;
 }
 
 #top a {
@@ -371,22 +371,23 @@ nav ul {
 }
 nav li a {
   display: block;
-  color: #1d295f;
+  color: white;
   padding: 0.9rem 2vw;
   text-decoration: none;
   text-align: right;
   border-bottom: 1px solid #ccc;
 }
 nav li.active a {
-  color: #7c1d47;
+  color: black;
+  background-color: #DD9700;
 }
 
 /* --------------------------- MAIN --------------------------- */
 main h1 {
   padding: 1rem 10px 0.5rem 10px;
   font-size: 1.5rem;
-  color: #7c1d47;
-  font-weight: 300;
+  color: #DD9700;
+  font-weight: 500;
 }
 main p {
   padding: 0.5rem 10px;
@@ -397,9 +398,95 @@ main input:required {
   border-left-color: red;
 }
 
+form.my-form {
+  margin: 1rem 10px;
+}
+form.my-form label {
+  display: block;
+  font-size: 0.8rem;
+  color: orange;
+  padding-top: 0.2rem;
+}
+form.my-form h3 {
+  font-size: 1.2rem;
+  color: #001365;
+  margin: 1.5rem;
+  border-bottom: 1px solid black;
+}
+form.my-form label {
+  color: #DD9700;
+  font-size: 1rem;
+  margin: 0 0 0 1rem;
+}
+form.my-form input[type=text] {
+  display: block;
+  margin: 0.1rem 0 1rem 0;
+  border: 1px solid #999;
+  border-radius: 10px 10px 0 0;
+  border-bottom-width: 5px;
+  border-bottom-color: #001365;
+  font-size: 0.9rem;
+  color: green;
+  width: 250px;
+  padding: 0.5rem 10px;
+}
+form.my-form input:required {
+  border-bottom-color: red;
+}
+form.my-form input:focus {
+  border-bottom-color: #001365;
+}
+form.my-form input:required:valid {
+  border-bottom-color: #001365;
+}
+form.my-form input[type=password] {
+  display: block;
+  margin: 0.1rem 0 1rem 0;
+  border-radius: 10px 10px 0 0;
+  border-bottom-width: 5px;
+  font-size: 0.9rem;
+  color: #236400;
+  width: 250px;
+  padding: 0.5rem 10px;
+}
+form.my-form input[type=tel],
+form.my-form input[type=email],
+form.my-form select {
+  display: block;
+  margin: 0.1rem 0 1rem 0;
+  border: 1px solid #999;
+  border-radius: 10px 10px 0 0;
+  border-bottom-width: 5px;
+  border-bottom-color: #001365;
+  font-size: 0.9rem;
+  color: #236400;
+  width: 250px;
+  padding: 0.5rem 10px;
+}
+form.my-form input[type=checkbox] {
+  color: red;
+  margin: 9px;
+}
+form.my-form input[type=radio] {
+  margin: 9px;
+}
+form.my-form input[type=submit] {
+  border: none;
+  background-color: #DD9700;
+  color: red;
+  border-radius: 1rem;
+  padding: 0.75rem 1.5rem;
+  margin: 2rem 0;
+  width: 250px;
+  font-size: 1.2rem;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+       appearance: none;
+}
+
 /* --------------------------- FOOTER --------------------------- */
 #footerWrapper {
-  background-color: #1d295f;
+  background-color: #001365;
 }
 
 footer {
@@ -432,7 +519,7 @@ footer a {
     border: none;
   }
   nav li a:hover {
-    background-color: #eee;
+    background-color: #2342A0;
   }
 }
 @media only screen and (min-width: 64rem) {
