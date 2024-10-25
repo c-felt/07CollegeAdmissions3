@@ -11,7 +11,12 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Spline+Sans:wght@300;500&display=swap" rel="stylesheet">
-
+    
+    <link rel="apple-touch-icon" sizes="180x180" href="/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="/favicon-16x16.png">
+    <link rel="manifest" href="/site.webmanifest">
+    <link rel="icon" href="favicon.ico">
 </head>
 
 <body>
@@ -45,26 +50,41 @@
         <h1>Apply</h1>
 
         <form method="GET" action="thanks.html" class="my-form" autocomplete="on">
+            <h3>Personal Information</h3>
             <label>First Name: <input type="text" name="fname" required autocomplete="given-name" placeholder="First name" title="Enter your first name here"></label> <!--the suggested thing wont work-->
-            <label>Last Name: <input type="text" name="lname" required autocomplete="family-name" title="Last name here"></label>
+            <label>Last Name: <input type="text" name="lname" required autocomplete="family-name" placeholder="Last Name" title="Last name here"></label>
             <label>Email: <input type="email" name="email" required autocomplete="email" title="Your email"></label>
             <label>Phone Number: <input type="tel" name="phone" required autocomplete="tel" title="Your phone number"></label>
 
-		<!-- Radio buttons here for contact preference: Email, Phone, mail -->
+		<!-- Radio buttons here for contact preference: Email, Phone, Mail -->
+            <h3>Whats the best contact method for you?</h3>
+            <label><input type="radio" name="contactMethod" value="PhoneCall">Phone Call</label>
+            <label><input type="radio" name="contactMethod" value="TextMessage">Text Message</label>
+            <label><input type="radio" name="contactMethod" value="Email">Email</label>
+            <label><input type="radio" name="contactMethod" value="Mail">Mail</label>
 
 		<!-- below is the previous schooling information dropdown box for type of schooling received: High School, Two year college, Four year College-->
+            <h3> Your Schooling History</h3>
             <label>
-                <select>
+                <select name="SchoolingType" required>
                     <option value="No Selection Made">Please Select</option>
-                    <option></option>
-                    <option></option>
+                    <option value="Highschool">Highschool</option>
+                    <option vlaue="TwoYear">Two Year College</option>
+                    <option vlaue="FourYear">Four Year College</option>
                 </select>
             </label>
 	<!-- here will go a date entry box for graduation date -->
 
 	<!-- here will go education completed type: GED, High School Diploma, Two year Associates Degree, FOur Year bachelors degree(?) -->
-
+            <h3>Level of Education Completed</h3>
+            <label><input type="checkbox" name="GED">GED</label>
+            <label><input type="checkbox" name="HSDiploma">High School Diploma</label>
+            <label><input type="checkbox" name="twoyear">Two Year Degree</label>
+            <label><input type="checkbox" name="fouryear">Four Year Degree</label>
 	<!--Here will be account information inout boxes for username and password -->
+            <h3>Account Information</h3>
+            <label>Username <input type="text" name="username" required title="Enter your first name here"></label> <!--the suggested thing wont work-->
+            <label>Password <input type="text" name="password" required title="Last name here"></label>
             
             <input type="submit" value="Send my info!">    
         </form>
