@@ -457,7 +457,7 @@ form.my-form input[type=tel],
 form.my-form input[type=email],
 form.my-form select {
   display: block;
-  margin: 0.1rem 0 1rem 0;
+  margin: 1rem 0 1rem 0;
   border: 1px solid #999;
   border-radius: 10px 10px 0 0;
   border-left-width: 5px;
