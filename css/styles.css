@@ -378,8 +378,9 @@ nav li a {
   border-bottom: 1px solid #ccc;
 }
 nav li.active a {
-  color: black;
+  color: white;
   background-color: #DD9700;
+  font-weight: 500;
 }
 
 /* --------------------------- MAIN --------------------------- */
@@ -404,19 +405,16 @@ form.my-form {
 form.my-form label {
   display: block;
   font-size: 0.8rem;
-  color: orange;
+  color: #DD9700;
   padding-top: 0.2rem;
+  font-size: 1rem;
+  margin: 0 0 0 1rem;
 }
 form.my-form h3 {
   font-size: 1.2rem;
   color: #001365;
   margin: 1.5rem;
   border-bottom: 1px solid black;
-}
-form.my-form label {
-  color: #DD9700;
-  font-size: 1rem;
-  margin: 0 0 0 1rem;
 }
 form.my-form input[type=text] {
   display: block;
@@ -429,21 +427,12 @@ form.my-form input[type=text] {
   width: 250px;
   padding: 0.5rem 10px;
 }
-form.my-form input:required {
-  border-left-color: red;
-}
-form.my-form input:focus {
-  border-left-color: #001365;
-}
-form.my-form input:required:valid {
-  border-left-color: #001365;
-}
 form.my-form input[type=password] {
   display: block;
   margin: 0.1rem 0 1rem 0;
   border-radius: 10px 10px 0 0;
   border-left-width: 5px;
-  border-left-color: #001365;
+  border-left-color: red;
   font-size: 0.9rem;
   color: #236400;
   width: 250px;
@@ -485,7 +474,7 @@ form.my-form input[type=radio] {
 form.my-form input[type=submit] {
   border: none;
   background-color: #DD9700;
-  color: red;
+  color: white;
   border-radius: 1rem;
   padding: 0.75rem 1.5rem;
   margin: 2rem 0;
@@ -494,6 +483,21 @@ form.my-form input[type=submit] {
   -webkit-appearance: none;
   -moz-appearance: none;
        appearance: none;
+}
+form.my-form input[type=text]:required {
+  border-left-color: red;
+}
+form.my-form input:focus {
+  border-left-color: #001365;
+}
+form.my-form input:required:valid {
+  border-left-color: #001365;
+}
+form.my-form input[type=password]:required:valid {
+  border-left-color: #001365;
+}
+form.my-form input[type=password]:required:invalid {
+  border-left-color: red;
 }
 
 /* --------------------------- FOOTER --------------------------- */
