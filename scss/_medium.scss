@@ -2,6 +2,9 @@
 body {
     display: block;
 }
+div#navWrapper {
+    background-color: $primaryColor;
+}
 #top a, #navlinks > a {
     display: none;
 
@@ -13,6 +16,7 @@ body {
     }
     li a {
         border: none;
+        color: white;
     }
     li a:hover {
         background-color: #2342A0;

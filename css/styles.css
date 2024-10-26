@@ -341,7 +341,7 @@ header span {
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
 div#navWrapper {
   grid-row-start: 4;
-  background-color: #001365;
+  background-color: white;
 }
 
 #top a, #navlinks > a {
@@ -371,10 +371,10 @@ nav ul {
 }
 nav li a {
   display: block;
-  color: white;
-  padding: 0.9rem 2vw;
+  color: #001365;
+  padding: 1rem 2vw;
   text-decoration: none;
-  text-align: right;
+  text-align: center;
   border-bottom: 1px solid #ccc;
 }
 nav li.active a {
@@ -423,27 +423,39 @@ form.my-form input[type=text] {
   margin: 0.1rem 0 1rem 0;
   border: 1px solid #999;
   border-radius: 10px 10px 0 0;
-  border-bottom-width: 5px;
-  border-bottom-color: #001365;
+  border-left-width: 5px;
   font-size: 0.9rem;
   color: green;
   width: 250px;
   padding: 0.5rem 10px;
 }
 form.my-form input:required {
-  border-bottom-color: red;
+  border-left-color: red;
 }
 form.my-form input:focus {
-  border-bottom-color: #001365;
+  border-left-color: #001365;
 }
 form.my-form input:required:valid {
-  border-bottom-color: #001365;
+  border-left-color: #001365;
 }
 form.my-form input[type=password] {
   display: block;
   margin: 0.1rem 0 1rem 0;
   border-radius: 10px 10px 0 0;
-  border-bottom-width: 5px;
+  border-left-width: 5px;
+  border-left-color: #001365;
+  font-size: 0.9rem;
+  color: #236400;
+  width: 250px;
+  padding: 0.5rem 10px;
+}
+form.my-form input[type=date] {
+  display: block;
+  margin: 1rem 0 1rem 1rem;
+  border: 1px solid #999;
+  border-radius: 10px 10px 0 0;
+  border-left-width: 5px;
+  border-left-color: #001365;
   font-size: 0.9rem;
   color: #236400;
   width: 250px;
@@ -456,8 +468,8 @@ form.my-form select {
   margin: 0.1rem 0 1rem 0;
   border: 1px solid #999;
   border-radius: 10px 10px 0 0;
-  border-bottom-width: 5px;
-  border-bottom-color: #001365;
+  border-left-width: 5px;
+  border-left-color: #001365;
   font-size: 0.9rem;
   color: #236400;
   width: 250px;
@@ -505,6 +517,9 @@ footer a {
   body {
     display: block;
   }
+  div#navWrapper {
+    background-color: #001365;
+  }
   #top a, #navlinks > a {
     display: none;
   }
@@ -516,6 +531,7 @@ footer a {
   }
   nav li a {
     border: none;
+    color: white;
   }
   nav li a:hover {
     background-color: #2342A0;

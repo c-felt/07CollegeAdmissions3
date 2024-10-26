@@ -40,7 +40,7 @@ header {
 /* --------------------------- NAVIGATION STUFF GOES HERE --------------------------- */
 div#navWrapper {
     grid-row-start: 4; //this moved all the nav stuff to be "inside" the hamburger menu
-    background-color: $primaryColor;
+    background-color: white;
 }
 
 #top a, #navlinks > a {
@@ -66,10 +66,10 @@ nav {
     }
     li a {
         display: block;
-        color: white;
-        padding: .9rem 2vw;
+        color: $primaryColor;
+        padding: 1rem 2vw;
         text-decoration: none;
-        text-align: right;
+        text-align: center;
         border-bottom: 1px solid $greyColor;
     }
     li.active a {
@@ -120,24 +120,36 @@ form.my-form {
         margin: .1rem 0 1rem 0;
         border: 1px solid #999;
         border-radius: 10px 10px 0 0;
-        border-bottom-width: 5px;
-        border-bottom-color: $primaryColor;
+        border-left-width: 5px;
+        // border-bottom-color: $primaryColor;
         font-size: .9rem;
         color: green;
         width: 250px;
         padding: .5rem $gutter;
     }
-    input:required {border-bottom-color: red;}
-    input:focus{border-bottom-color: $primaryColor;}
-    input:required:valid {border-bottom-color: $primaryColor;}
+    input:required {border-left-color: red;}
+    input:focus{border-left-color: $primaryColor;}
+    input:required:valid {border-left-color: $primaryColor;}
 
     input[type=password] {
         display: block;
         margin: .1rem 0 1rem 0;
         // border: 1px solid;
         border-radius: 10px 10px 0 0;
-        border-bottom-width: 5px;
-        // border-bottom-color: $primaryColor;
+        border-left-width: 5px;
+        border-left-color: $primaryColor;
+        font-size: .9rem;
+        color: $accentColor;
+        width: 250px;
+        padding: .5rem $gutter;
+    }
+    input[type=date] {
+        display: block;
+        margin: 1rem 0 1rem 1rem;
+        border: 1px solid #999;
+        border-radius: 10px 10px 0 0;
+        border-left-width: 5px;
+        border-left-color: $primaryColor;
         font-size: .9rem;
         color: $accentColor;
         width: 250px;
@@ -151,8 +163,8 @@ form.my-form {
         margin: .1rem 0 1rem 0;
         border: 1px solid #999;
         border-radius: 10px 10px 0 0;
-        border-bottom-width: 5px;
-        border-bottom-color: $primaryColor;
+        border-left-width: 5px;
+        border-left-color: $primaryColor;
         font-size: .9rem;
         color: $accentColor;
         width: 250px;
