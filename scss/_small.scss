@@ -82,6 +82,10 @@ nav {
         font-weight: $normalWeight;
     }
 }
+a[href^="tel:"] {
+  color: orange;
+  text-decoration: none;
+}
 
 /* --------------------------- MAIN --------------------------- */
 main {
